@@ -1,5 +1,10 @@
 [gd_scene format=3 uid="uid://dton36ls3v300"]
 
+[sub_resource type="ImageTexture" id="ImageTexture_7dm0k"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xawgp"]
+texture = SubResource("ImageTexture_7dm0k")
+
 [node name="Main" type="Control" unique_id=1455713351]
 layout_mode = 3
 anchors_preset = 15
@@ -19,8 +24,9 @@ text = "Willkommen am BRG Kepler – Mein erstes Godot 4 Spiel!
 
 [node name="Button" type="Button" parent="." unique_id=1546457935]
 layout_mode = 0
-offset_left = 218.0
+offset_left = 149.0
 offset_top = 29.0
 offset_right = 309.0
 offset_bottom = 60.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_xawgp")
 text = "Klick mich!"
