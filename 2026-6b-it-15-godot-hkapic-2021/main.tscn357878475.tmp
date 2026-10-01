@@ -33,6 +33,5 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_7dm0k")
 text = "Klick mich!"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1684339989]
-position = Vector2(388, 183)
 texture = ExtResource("1_ig7tw")
 script = ExtResource("2_0xm2m")
