@@ -1,9 +1,14 @@
 extends Sprite2D
 
+signal health_depleted(final_score: int)
+
 @export var speed: float = 400.0
 
 func _ready() -> void:
 	print("Player initialisiert am BRG Kepler!")
+
+func take_damage() -> void:
+	health_depleted.emit(100)
 
 func _process(delta: float) -> void:
 	var direction: Vector2 = Vector2.ZERO
